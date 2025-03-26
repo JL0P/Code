@@ -1,4 +1,4 @@
-%% =========================
+%% ========================
 % MATLAB SCRIPT: Single Threshold Evaluation with Pretrained Weights
 % Description:
 % 1. Load sensor IDs and configuration.

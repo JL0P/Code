@@ -1,4 +1,4 @@
-%% =========================
+%% ========================
 % MATLAB SCRIPT: Multi Threshold Evaluation% Description:
 % 1. Load sensor IDs and configuration.
 % 2. Retrieve best epochs via early stopping logs.
