@@ -2,6 +2,11 @@
 This repository contains a collection of MATLAB and Python scripts for EPANET-based dataset generation, neural network tuning (network structure + regularization), and sensor pruning based on learned weights. The workflow is divided into steps, each with its own script/notebook, as discussed in my thesis[1] and in [2].
 The workflow is divided into steps, each with its own script/notebook. Below is an overview of how to set up and run them.
 
+## References
+[1] **Lo Presti, J.**. "Neural Network-Based Methods for the Management and Control of Complex Systems." (2025).
+
+[2] **Lo Presti, J., et al.** (2024). *Combining clustering and regularised neural network for burst detection and localization and flow/pressure sensor placement in water distribution networks.* Journal of Water Process Engineering, **63**, 105473.
+
 # Scripts Overview
 1. Dataset Generation & Splitting:
 
@@ -50,8 +55,3 @@ for fine-tuning the final models.
 
 >**Note:** This code is provided as a demonstrative scratch to show the core concepts and workflow. Non-essential functions and details have been omitted for brevity. If you need additional information or the missing parts, feel free to contact me or open an issue – I’ll be happy to assist!
 
-
-## References
-[1] **Lo Presti, J.**. "Neural Network-Based Methods for the Management and Control of Complex Systems." (2025).
-
-[2] **Lo Presti, J., et al.** (2024). *Combining clustering and regularised neural network for burst detection and localization and flow/pressure sensor placement in water distribution networks.* Journal of Water Process Engineering, **63**, 105473.
