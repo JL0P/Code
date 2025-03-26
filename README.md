@@ -12,14 +12,14 @@ This step involves:
 
 2. Network Structure Tuning
 
-    **tuning_net_structure.py**
+        tuning_net_structure.py
     
     Uses Python’s Keras Tuner to optimize neural net architecture (e.g., layer sizes, learning rate) with Val1.
     The results, including logs and hyperparameter grids, are saved in INFO/ subfolders.
 
 3. L21 Regularization Tuning
 
-    **tuning_L21.py**
+        tuning_L21.py
 
     Focuses on tuning the L21 (group-sparse) regularization hyperparameter. Trains on Train+Val1 and checks performance on Val2.
 
@@ -27,7 +27,7 @@ This step involves:
 
 A key MATLAB scripts plus corresponding Python evaluation scripts:
 
-    **allModelsThAndGridEvaluation.m**
+**allModelsThAndGridEvaluation.m**
 
 applies norm-2 thresholds to input weights to decide which sensors to keep and calling 
 
@@ -37,7 +37,7 @@ applies norm-2 thresholds to input weights to decide which sensors to keep and c
 
 Once the threshold is fixed, re-train from optimized weights, again using Train+Val1 / Val2 using 
 
-    **allModelsThAndGridEvaluation_singleTh.m**
+    **allModelsThAndGridEvaluation_singleTh\.m**
 
 which calls **evaluateModelAtSingleTh.py** for fine-tuning the final models.
 
