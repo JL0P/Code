@@ -23,23 +23,16 @@ This step involves:
 
 4. Pruning Sensors via Norm2 & Retraining
 
-Two key MATLAB scripts plus corresponding Python evaluation scripts:
+A key MATLAB scripts plus corresponding Python evaluation scripts:
 
     allModelsThAndGridEvaluation.m
-    Applies norm-2 thresholds to input weights to decide which sensors to keep.
 
-    evaluateModelAtDifferentTh.py
-    A Python function invoked by the MATLAB script to evaluate the model across thresholds.
-
-You only need to do extensive pruning for the best model. Use plotL21.m to find the final threshold.
+applies norm-2 thresholds to input weights to decide which sensors to keep and calling 
+  evaluateModelAtDifferentTh.py, a Python function invoked by the MATLAB script to evaluate the model across thresholds.
 
 5. Final Single-Threshold Pruning
-
-    allModelsThAndGridEvaluation_singleTh.m
-    Once the threshold is fixed, re-train from optimized weights, again using Train+Val1 / Val2.
-
-    evaluateModelAtSingleTh.py
-    Python script to evaluate or finalize results.
+Once the threshold is fixed, re-train from optimized weights, again using Train+Val1 / Val2 using 
+    allModelsThAndGridEvaluation_singleTh.m which calls evaluateModelAtSingleTh.py for fine-tuning the final models.
 
 ## References
 [1] **Lo Presti, J.**. "Neural Network-Based Methods for the Management and Control of Complex Systems." (2025).
