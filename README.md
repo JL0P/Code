@@ -28,11 +28,15 @@ A key MATLAB scripts plus corresponding Python evaluation scripts:
     allModelsThAndGridEvaluation.m
 
 applies norm-2 thresholds to input weights to decide which sensors to keep and calling 
-  evaluateModelAtDifferentTh.py, a Python function invoked by the MATLAB script to evaluate the model across thresholds.
+
+  evaluateModelAtDifferentTh.py
+
+a Python function invoked by the MATLAB script to evaluate the model across thresholds.
 
 5. Final Single-Threshold Pruning
 
 Once the threshold is fixed, re-train from optimized weights, again using Train+Val1 / Val2 using 
+
     allModelsThAndGridEvaluation_singleTh.m 
 
 which calls evaluateModelAtSingleTh.py for fine-tuning the final models.
