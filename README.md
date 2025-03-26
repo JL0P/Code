@@ -29,9 +29,7 @@ A key MATLAB scripts plus corresponding Python evaluation scripts:
 
 applies norm-2 thresholds to input weights to decide which sensors to keep and calling 
 
-  evaluateModelAtDifferentTh.py
-
-a Python function invoked by the MATLAB script to evaluate the model across thresholds.
+  evaluateModelAtDifferentTh.py, a Python function invoked by the MATLAB script to evaluate the model across thresholds.
 
 5. Final Single-Threshold Pruning
 
