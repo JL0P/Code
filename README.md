@@ -3,8 +3,9 @@ This repository contains a collection of MATLAB and Python scripts for EPANET-ba
 The workflow is divided into steps, each with its own script/notebook. Below is an overview of how to set up and run them.
 
 # Scripts Overview
-1. Dataset Generation & Splitting
-> **Note:** The data used in this repository cannot be publicly shared due to confidentiality constraints. However, the same methodology applies to *any* Water Distribution Network. By simulating an EPANET model (see [1,2] for guidelines), you can generate similar data to train and test your models.
+1. Dataset Generation & Splitting:
+
+The data used in this repository cannot be publicly shared due to confidentiality constraints. However, the same methodology applies to *any* Water Distribution Network. By simulating an EPANET model (see [1,2] for guidelines), you can generate similar data to train and test your models.
 
 This step involves:
 - Generating synthetic or real data from an EPANET simulation.
@@ -46,6 +47,9 @@ which calls
       evaluateModelAtSingleTh.py
 
 for fine-tuning the final models.
+
+>**Note:** This code is provided as a demonstrative scratch to show the core concepts and workflow. Non-essential functions and details have been omitted for brevity. If you need additional information or the missing parts, feel free to contact me or open an issue – I’ll be happy to assist!
+
 
 ## References
 [1] **Lo Presti, J.**. "Neural Network-Based Methods for the Management and Control of Complex Systems." (2025).
